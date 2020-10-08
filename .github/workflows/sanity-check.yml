@@ -1,0 +1,15 @@
+name: PR Sanity Check
+# https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-nodejs
+
+on: pull_request
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - run: npm install
+      - run: npm run lint
+      - run: npm run test
