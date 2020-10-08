@@ -16,5 +16,11 @@
     "url": "https://github.com/vvscode/ts--service/issues"
   },
   "homepage": "https://github.com/vvscode/ts--service#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
 }
