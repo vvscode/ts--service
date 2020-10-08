@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon --watch 'src/**' --exec 'ts-node' src/index.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "yarn run build && node dist/index.js",
+    "start": "node dist/index.js",
+    "start:clean": "yarn build && node dist/index.js",
     "test": "echo \"Error: no test specified\"",
     "lint": "prettier --check && eslint . --ext \"js,ts\"",
     "lint:fix": "prettier --write . && eslint . --ext \"js,ts\" --fix"
